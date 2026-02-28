@@ -100,7 +100,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="mt-16 pt-8 border-t border-muted/20">
           <div className="flex flex-col md:flex-row justify-center items-center text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} Construction & Design. All rights reserved.</p>
+            <p>&copy; 2015-2026 Construction & Design. All rights reserved.</p>
           </div>
           <p className="text-center text-xs text-muted-foreground/70 mt-6">
             Designed & Developed with Excellence by ITLC Team
