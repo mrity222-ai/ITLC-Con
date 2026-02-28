@@ -43,7 +43,7 @@ export default function Footer() {
             </h3>
             <div className="w-16 h-0.5 bg-primary mb-4"></div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-[250px]">
-              Building dream homes with precision and trust for over a decade.
+              Delivering Dream Homes with Excellence and Integrity for Over 10 Years.
             </p>
           </div>
 
