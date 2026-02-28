@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { motion } from 'framer-motion';
 
 function StatCard({ value, label }: { value: string; label: string }) {
   return (
@@ -15,6 +16,30 @@ function StatCard({ value, label }: { value: string; label: string }) {
 }
 
 export default function HeroSection() {
+  const statVariants = {
+    hidden: { opacity: 0, x: 50 },
+    visible: (i: number) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: i * 0.2 + 0.5, // Stagger the animation
+        duration: 0.8,
+        ease: 'easeOut',
+      },
+    }),
+  };
+  
+  const arrowVariants = {
+    bounce: {
+      y: ["0%", "20%", "0%"],
+      transition: {
+        duration: 2,
+        ease: "easeInOut",
+        repeat: Infinity,
+      },
+    },
+  };
+  
   return (
     <section id="home" className="h-screen w-full relative bg-black">
       <div className="absolute inset-0 z-0 overflow-hidden">
@@ -34,7 +59,7 @@ export default function HeroSection() {
 
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center p-4 text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-tight" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}>
-          Building Dream Homes with Precision & Trust
+          Turning Visions into Dream Homes with Trust & Perfection
         </h1>
         <p className="text-lg md:text-xl max-w-3xl mb-8" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.5)' }}>
           ITLC India redefines luxury living through innovative design, unparalleled craftsmanship, and a commitment to excellence.
@@ -52,12 +77,18 @@ export default function HeroSection() {
         </div>
 
         <div className="absolute bottom-20 right-10 hidden md:flex flex-col gap-6">
-          <StatCard value="10+" label="Years Experience" />
-          <StatCard value="50+" label="Projects Completed" />
+          <motion.div custom={0} initial="hidden" animate="visible" variants={statVariants}>
+            <StatCard value="10+" label="Years Experience" />
+          </motion.div>
+          <motion.div custom={1} initial="hidden" animate="visible" variants={statVariants}>
+            <StatCard value="50+" label="Projects Completed" />
+          </motion.div>
         </div>
         
-        <Link href="#about" aria-label="Scroll down" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <ArrowDown className="w-8 h-8 text-white" />
+        <Link href="#about" aria-label="Scroll down" className="absolute bottom-8 left-1/2 -translate-x-1/2">
+            <motion.div variants={arrowVariants} animate="bounce">
+              <ArrowDown className="w-8 h-8 text-white" />
+            </motion.div>
         </Link>
       </div>
     </section>
