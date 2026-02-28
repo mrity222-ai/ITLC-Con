@@ -32,7 +32,7 @@ export default function Header() {
               />
             </div>
           )}
-          <span className="bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent leading-tight">
+          <span className="text-primary leading-tight">
             Construction & Design
           </span>
         </Link>
@@ -51,7 +51,7 @@ export default function Header() {
 
         <Button asChild size="lg" className={cn(
             "hidden md:block rounded-[12px] font-semibold px-7 py-3.5 shadow-button-light transition-all duration-300 hover:-translate-y-0.5 hover:shadow-button-light-hover",
-            "bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] text-white"
+            "bg-primary text-primary-foreground"
         )}>
           <Link href="#contact">Get a Quote</Link>
         </Button>

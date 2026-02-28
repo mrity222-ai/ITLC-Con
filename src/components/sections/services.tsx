@@ -22,12 +22,12 @@ const services: Service[] = [
 
 function ServiceCard({ service }: { service: Service }) {
   return (
-    <Card className="group h-full text-center bg-card/50 backdrop-blur-sm border border-border/30 rounded-[24px] p-6 shadow-xl shadow-black/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10">
+    <Card className="group h-full text-center bg-card/50 backdrop-blur-sm border border-border/30 rounded-[24px] p-6 shadow-xl shadow-black/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/10">
       <CardHeader className="items-center">
-        <div className="p-5 bg-gradient-to-br from-primary/10 via-primary/20 to-indigo-500/20 text-primary rounded-[18px] mb-6 inline-block transition-transform duration-300 group-hover:scale-110">
+        <div className="p-5 bg-gradient-to-br from-primary/10 via-primary/20 to-primary/20 text-primary rounded-[18px] mb-6 inline-block transition-transform duration-300 group-hover:scale-110">
           <service.icon className="w-8 h-8" />
         </div>
-        <CardTitle className="tracking-tight bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent">{service.title}</CardTitle>
+        <CardTitle className="tracking-tight text-primary">{service.title}</CardTitle>
       </CardHeader>
       <CardContent>
         <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
@@ -79,7 +79,7 @@ export default function ServicesSection() {
     >
       <div className="container mx-auto px-4 md:px-6 text-center max-w-7xl">
         <motion.h2 
-            className="text-4xl md:text-5xl font-bold mb-4 tracking-tight bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent"
+            className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-primary"
             variants={cardVariants}
         >
             Our Expertise

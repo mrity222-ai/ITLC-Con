@@ -36,7 +36,7 @@ export default function ProjectsSection() {
     <section id="projects" className="py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent">Our Portfolio</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-primary">Our Portfolio</h2>
           <p className="max-w-3xl mx-auto text-muted-foreground">
             A glimpse into the quality, diversity, and craftsmanship of our completed and ongoing projects.
           </p>
@@ -107,7 +107,7 @@ export default function ProjectsSection() {
               </div>
               <div className="p-8">
                 <DialogHeader>
-                  <DialogTitle className="text-2xl font-bold tracking-tight mb-2 bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent">{selectedProject.title}</DialogTitle>
+                  <DialogTitle className="text-2xl font-bold tracking-tight mb-2 text-primary">{selectedProject.title}</DialogTitle>
                   <DialogDescription className="text-sm text-primary font-semibold">{selectedProject.category} Project</DialogDescription>
                 </DialogHeader>
                 <div className="mt-4 text-muted-foreground space-y-4 text-sm">

@@ -38,7 +38,7 @@ export default function Footer() {
                 />
               </div>
             )}
-            <h3 className="text-2xl font-bold bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent mb-2 leading-tight">
+            <h3 className="text-2xl font-bold text-primary mb-2 leading-tight">
               Construction & Design
             </h3>
             <div className="w-16 h-0.5 bg-primary mb-4"></div>
@@ -49,7 +49,7 @@ export default function Footer() {
 
           {/* Column 2: Services */}
           <div>
-            <h4 className="font-semibold text-lg mb-4 bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent">Services</h4>
+            <h4 className="font-semibold text-lg mb-4 text-primary">Services</h4>
             <ul className="space-y-3">
               {services.map(service => (
                 <li key={service.name}>
@@ -64,7 +64,7 @@ export default function Footer() {
 
           {/* Column 3: Quick Links */}
           <div>
-            <h4 className="font-semibold text-lg mb-4 bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent">Quick Links</h4>
+            <h4 className="font-semibold text-lg mb-4 text-primary">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map(link => (
                 <li key={link.name}>
@@ -79,7 +79,7 @@ export default function Footer() {
 
           {/* Column 4: Contact Info */}
           <div>
-            <h4 className="font-semibold text-lg mb-4 bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent">Contact Us</h4>
+            <h4 className="font-semibold text-lg mb-4 text-primary">Contact Us</h4>
             <address className="not-italic text-sm space-y-4 text-muted-foreground">
               <p className="flex items-start">
                 <MapPin size={16} className="mr-3 mt-1 shrink-0 text-primary" />

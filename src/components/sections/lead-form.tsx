@@ -94,7 +94,7 @@ export default function LeadFormSection() {
     <section id="contact" className="py-24 bg-secondary">
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent">Planning to Build Your Dream Home?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-primary">Planning to Build Your Dream Home?</h2>
           <p className="text-muted-foreground mb-12">
             Fill out the form below for a free consultation and site visit. Let's start building your future together.
           </p>
@@ -174,7 +174,7 @@ export default function LeadFormSection() {
               </div>
               <Button type="submit" size="lg" className={cn(
                 "w-full rounded-[12px] font-semibold px-7 py-3.5 shadow-button-light transition-all duration-300 hover:-translate-y-0.5 hover:shadow-button-light-hover",
-                "bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] text-white"
+                "bg-primary text-primary-foreground"
               )} disabled={isSubmitting}>
                 {isSubmitting ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Sending...</> : 'Submit Your Enquiry'}
               </Button>

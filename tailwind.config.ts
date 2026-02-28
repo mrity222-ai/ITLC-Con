@@ -15,6 +15,7 @@ export default {
         code: ['monospace'],
       },
       colors: {
+        vividazure: '#25aaf7',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

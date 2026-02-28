@@ -35,7 +35,7 @@ export default function WhyChooseUsSection() {
     <section id="why-us" className="py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent">Why Choose ITLC India?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-primary">Why Choose ITLC India?</h2>
           <p className="max-w-3xl mx-auto text-muted-foreground">
             We are more than just builders. We are partners in creating the space you'll call home.
           </p>
@@ -44,10 +44,10 @@ export default function WhyChooseUsSection() {
           {features.map((feature) => (
              <Card key={feature.title} className="h-full text-center bg-secondary border rounded-[20px] p-4 shadow-card-light transition-all duration-300 hover:-translate-y-2 hover:shadow-card-light-hover">
              <CardHeader className="items-center">
-               <div className="p-5 bg-[#E9EEFF] text-primary rounded-[16px] mb-4 inline-block">
+               <div className="p-5 bg-primary/10 text-primary rounded-[16px] mb-4 inline-block">
                  <feature.icon className="w-8 h-8" />
                </div>
-               <CardTitle className="text-lg font-semibold tracking-tight bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent">{feature.title}</CardTitle>
+               <CardTitle className="text-lg font-semibold tracking-tight text-primary">{feature.title}</CardTitle>
              </CardHeader>
              <CardContent>
                <p className="text-muted-foreground text-sm">{feature.description}</p>

@@ -42,7 +42,7 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4">
           <Button asChild size="lg" className={cn(
             "rounded-[12px] font-semibold px-7 py-3.5 shadow-button-light transition-all duration-300 hover:-translate-y-0.5 hover:shadow-button-light-hover",
-            "bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] text-white"
+            "bg-primary text-primary-foreground"
           )}>
             <Link href="#contact">Get Free Site Visit</Link>
           </Button>

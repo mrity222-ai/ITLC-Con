@@ -24,7 +24,7 @@ function Counter({ to, suffix = '' }: { to: number; suffix?: string }) {
         }
     }, [to, suffix, isInView]);
 
-    return <p className="text-4xl lg:text-5xl font-bold bg-gradient-to-br from-[#2563EB] to-[#1E40AF] bg-clip-text text-transparent" ref={nodeRef} >0{suffix}</p>;
+    return <p className="text-4xl lg:text-5xl font-bold text-primary" ref={nodeRef} >0{suffix}</p>;
 }
 
 // --- Main About Section Component ---
@@ -85,8 +85,8 @@ export default function AboutSection() {
         animate={animationControls}
     >
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-blue-100/30 via-transparent to-transparent opacity-50 dark:from-blue-900/20"></div>
-        <div className="absolute bottom-0 left-0 w-2/3 h-2/3 bg-gradient-to-tr from-indigo-100/30 via-transparent to-transparent opacity-50 dark:from-indigo-900/20"></div>
+        <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-cyan-100/30 via-transparent to-transparent opacity-50 dark:from-cyan-900/20"></div>
+        <div className="absolute bottom-0 left-0 w-2/3 h-2/3 bg-gradient-to-tr from-sky-100/30 via-transparent to-transparent opacity-50 dark:from-sky-900/20"></div>
       </div>
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
@@ -96,8 +96,8 @@ export default function AboutSection() {
                 className="relative aspect-[4/3]"
               >
                   <motion.div
-                    className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/10 group"
-                    style={{ filter: 'drop-shadow(0 20px 25px rgba(37, 99, 235, 0.1))' }}
+                    className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl shadow-cyan-500/10 group"
+                    style={{ filter: 'drop-shadow(0 20px 25px rgba(37, 170, 247, 0.1))' }}
                     variants={imageFloatVariants}
                     animate={imageAnimationControls}
                   >
@@ -127,12 +127,12 @@ export default function AboutSection() {
             }}
           >
             <motion.h2 
-              className="text-4xl md:text-5xl font-bold mb-6 tracking-tight bg-gradient-to-br from-[#2563EB] to-[#1E40AF] bg-clip-text text-transparent"
+              className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-primary"
               variants={itemVariants}
             >
               Building Trust. Crafting Excellence.
             </motion.h2>
-            <motion.div variants={itemVariants} className="w-20 h-1.5 bg-gradient-to-r from-[#2563EB] to-[#1E40AF] mb-8 rounded-full"></motion.div>
+            <motion.div variants={itemVariants} className="w-20 h-1.5 bg-primary mb-8 rounded-full"></motion.div>
             
             <motion.div 
               className="space-y-6 text-muted-foreground"

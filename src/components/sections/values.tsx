@@ -46,13 +46,13 @@ export default function ValuesSection() {
       initial="hidden"
       animate={controls}
     >
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-background via-blue-50/20 to-background dark:from-background dark:via-blue-900/10 dark:to-background"></div>
-      <div className="absolute -top-24 -left-24 w-72 h-72 bg-blue-200/50 rounded-full filter blur-3xl opacity-50 animate-pulse dark:bg-blue-900/30"></div>
-      <div className="absolute -bottom-24 -right-24 w-72 h-72 bg-indigo-200/50 rounded-full filter blur-3xl opacity-40 animate-pulse animation-delay-4000 dark:bg-indigo-900/30"></div>
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-background via-cyan-50/20 to-background dark:from-background dark:via-cyan-900/10 dark:to-background"></div>
+      <div className="absolute -top-24 -left-24 w-72 h-72 bg-cyan-200/50 rounded-full filter blur-3xl opacity-50 animate-pulse dark:bg-cyan-900/30"></div>
+      <div className="absolute -bottom-24 -right-24 w-72 h-72 bg-sky-200/50 rounded-full filter blur-3xl opacity-40 animate-pulse animation-delay-4000 dark:bg-sky-900/30"></div>
 
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <motion.div className="text-center mb-16" variants={cardVariants}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-primary">
             Our Core Values
           </h2>
           <p className="max-w-3xl mx-auto text-muted-foreground md:text-lg">
@@ -66,9 +66,9 @@ export default function ValuesSection() {
               key={value.title}
               variants={cardVariants}
             >
-              <Card className="group bg-background/60 backdrop-blur-lg border border-border/20 rounded-[24px] p-8 text-center h-full flex flex-col justify-center items-center transition-all duration-300 hover:-translate-y-2 shadow-lg hover:shadow-2xl hover:shadow-blue-500/20">
+              <Card className="group bg-background/60 backdrop-blur-lg border border-border/20 rounded-[24px] p-8 text-center h-full flex flex-col justify-center items-center transition-all duration-300 hover:-translate-y-2 shadow-lg hover:shadow-2xl hover:shadow-cyan-500/20">
                 <motion.div 
-                  className="relative bg-gradient-to-br from-primary/10 via-primary/20 to-indigo-500/20 rounded-[20px] p-5 mb-6 w-fit transform transition-transform duration-300 group-hover:scale-110"
+                  className="relative bg-gradient-to-br from-primary/10 via-primary/20 to-primary/20 rounded-[20px] p-5 mb-6 w-fit transform transition-transform duration-300 group-hover:scale-110"
                   whileHover={{ y: -5 }}
                 >
                   <div className="absolute inset-0 bg-primary/10 rounded-[20px] blur-md opacity-50 group-hover:opacity-75 transition-opacity"></div>

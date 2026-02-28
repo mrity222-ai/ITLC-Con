@@ -26,7 +26,7 @@ export default function VideoTestimonialsSection() {
     <section id="testimonials" className="py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight bg-gradient-to-br from-[#3B6AF5] to-[#2F5FE3] bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-primary">
             Hear From Our Clients
           </h2>
           <p className="max-w-3xl mx-auto text-muted-foreground">
