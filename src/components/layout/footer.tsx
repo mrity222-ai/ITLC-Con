@@ -39,7 +39,7 @@ export default function Footer() {
               </div>
             )}
             <h3 className="text-2xl font-bold text-primary mb-2 leading-tight">
-              Construction & Design
+              Design & Construction
             </h3>
             <div className="w-16 h-0.5 bg-primary mb-4"></div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-[250px]">
@@ -100,7 +100,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="mt-16 pt-8 border-t border-muted/20">
           <div className="flex flex-col md:flex-row justify-center items-center text-sm text-muted-foreground">
-            <p>&copy; 2015-2026 Construction & Design. All rights reserved.</p>
+            <p>&copy; 2015-2026 Design & Construction. All rights reserved.</p>
           </div>
           <p className="text-center text-xs text-muted-foreground/70 mt-6">
             Designed & Developed with Excellence by ITLC Team

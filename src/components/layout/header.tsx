@@ -33,7 +33,7 @@ export default function Header() {
             </div>
           )}
           <span className="text-primary leading-tight">
-            Construction & Design
+            Design & Construction
           </span>
         </Link>
 
