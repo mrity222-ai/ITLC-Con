@@ -10,12 +10,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Poppins', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
         headline: ['Poppins', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
-        vividazure: '#25aaf7',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

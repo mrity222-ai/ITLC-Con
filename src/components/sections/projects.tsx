@@ -36,7 +36,7 @@ export default function ProjectsSection() {
     <section id="projects" className="py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-primary">Our Portfolio</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4 tracking-tight text-foreground">Our Portfolio</h2>
           <p className="max-w-3xl mx-auto text-muted-foreground">
             A glimpse into the quality, diversity, and craftsmanship of our completed and ongoing projects.
           </p>
@@ -81,7 +81,7 @@ export default function ProjectsSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-6 text-white">
                   <p className="text-sm uppercase tracking-wider font-semibold text-white/80">{project.category}</p>
-                  <h3 className="text-xl font-bold">{project.title}</h3>
+                  <h3 className="text-xl font-bold font-headline">{project.title}</h3>
                 </div>
                 <div className="absolute top-4 right-4 bg-background/50 text-foreground p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
                   <Maximize className="w-5 h-5" />
@@ -107,8 +107,8 @@ export default function ProjectsSection() {
               </div>
               <div className="p-8">
                 <DialogHeader>
-                  <DialogTitle className="text-2xl font-bold tracking-tight mb-2 text-primary">{selectedProject.title}</DialogTitle>
-                  <DialogDescription className="text-sm text-primary font-semibold">{selectedProject.category} Project</DialogDescription>
+                  <DialogTitle className="text-2xl font-bold font-headline tracking-tight mb-2 text-foreground">{selectedProject.title}</DialogTitle>
+                  <DialogDescription className="text-sm text-muted-foreground font-semibold">{selectedProject.category} Project</DialogDescription>
                 </DialogHeader>
                 <div className="mt-4 text-muted-foreground space-y-4 text-sm">
                   <p>This is a placeholder description for the {selectedProject.title} project. Here we would detail the scope, challenges, and outcomes of the project, highlighting the quality of our work.</p>

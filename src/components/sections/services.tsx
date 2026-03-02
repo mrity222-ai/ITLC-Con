@@ -27,7 +27,7 @@ function ServiceCard({ service }: { service: Service }) {
         <div className="p-5 bg-gradient-to-br from-primary/10 via-primary/20 to-primary/20 text-primary rounded-[18px] mb-6 inline-block transition-transform duration-300 group-hover:scale-110">
           <service.icon className="w-8 h-8" />
         </div>
-        <CardTitle className="tracking-tight text-primary">{service.title}</CardTitle>
+        <CardTitle className="tracking-tight font-headline text-foreground">{service.title}</CardTitle>
       </CardHeader>
       <CardContent>
         <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
@@ -79,7 +79,7 @@ export default function ServicesSection() {
     >
       <div className="container mx-auto px-4 md:px-6 text-center max-w-7xl">
         <motion.h2 
-            className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-primary"
+            className="text-4xl md:text-5xl font-bold font-headline mb-4 tracking-tight text-foreground"
             variants={cardVariants}
         >
             Our Expertise

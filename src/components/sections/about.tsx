@@ -127,7 +127,7 @@ export default function AboutSection() {
             }}
           >
             <motion.h2 
-              className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-primary"
+              className="text-4xl md:text-5xl font-bold font-headline mb-6 tracking-tight text-foreground"
               variants={itemVariants}
             >
               Building Trust. Crafting Excellence.

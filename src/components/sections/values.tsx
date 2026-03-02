@@ -52,7 +52,7 @@ export default function ValuesSection() {
 
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <motion.div className="text-center mb-16" variants={cardVariants}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-primary">
+          <h2 className="text-4xl md:text-5xl font-bold font-headline mb-4 tracking-tight text-foreground">
             Our Core Values
           </h2>
           <p className="max-w-3xl mx-auto text-muted-foreground md:text-lg">
@@ -74,7 +74,7 @@ export default function ValuesSection() {
                   <div className="absolute inset-0 bg-primary/10 rounded-[20px] blur-md opacity-50 group-hover:opacity-75 transition-opacity"></div>
                   <value.icon className="relative w-10 h-10 text-primary" />
                 </motion.div>
-                <h3 className="font-bold text-xl tracking-tight text-foreground">{value.title}</h3>
+                <h3 className="font-bold font-headline text-xl tracking-tight text-foreground">{value.title}</h3>
               </Card>
             </motion.div>
           ))}
