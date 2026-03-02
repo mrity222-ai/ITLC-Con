@@ -16,7 +16,7 @@ const projects: {
   image?: ImagePlaceholder;
 }[] = [
   { id: 'project-1', category: 'Ongoing', title: 'Modern Villa', image: PlaceHolderImages.find(p => p.id === 'project-1') },
-  { id: 'project-2', category: 'Completed', title: 'Luxury Apartment Interior', image: PlaceHolderImages.find(p => p.id === 'project-2') },
+  { id: 'project-2', category: 'Completed', title: 'complete luxury home', image: PlaceHolderImages.find(p => p.id === 'project-2') },
   { id: 'project-3', category: 'Completed', title: 'Luxury house', image: PlaceHolderImages.find(p => p.id === 'project-3') },
   { id: 'project-4', category: 'Completed', title: 'European-style houses', image: PlaceHolderImages.find(p => p.id === 'project-4') },
   { id: 'project-5', category: 'Ongoing', title: 'Corporate Office Building', image: PlaceHolderImages.find(p => p.id === 'project-5') },
