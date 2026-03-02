@@ -59,7 +59,7 @@ export default function TurnkeyProjectsSection() {
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
             >
-                <div className="bg-card/60 backdrop-blur-lg border border-border/20 rounded-[24px] p-8 shadow-lg">
+                <div className="bg-card/60 backdrop-blur-lg border border-border/20 rounded-[24px] p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
                     <p className="text-muted-foreground leading-relaxed mb-6">
                         We provide complete turnkey project services that cover every stage of construction—from initial planning and design to material procurement, execution, and final handover. Our integrated approach ensures seamless coordination, strict quality control, and timely delivery without hidden costs or delays.
                     </p>
@@ -67,7 +67,7 @@ export default function TurnkeyProjectsSection() {
                         With a single point of responsibility, we simplify the entire construction process for our clients, ensuring transparency, efficiency, and superior results. Whether it’s residential, commercial, or infrastructure projects, our expert team manages everything so you can focus on your vision while we handle the execution.
                     </p>
                 </div>
-                <div className="bg-card/60 backdrop-blur-lg border border-border/20 rounded-[24px] p-8 shadow-lg">
+                <div className="bg-card/60 backdrop-blur-lg border border-border/20 rounded-[24px] p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
                     <h3 className="font-bold font-headline text-xl tracking-tight text-foreground mb-6">Our Turnkey Services Include:</h3>
                     <ul className="space-y-3">
                         {turnkeyServices.map((service) => (
@@ -80,7 +80,7 @@ export default function TurnkeyProjectsSection() {
                 </div>
             </motion.div>
             <motion.div 
-                className="bg-card/60 backdrop-blur-lg border border-border/20 rounded-[24px] p-8 shadow-lg space-y-8 sticky top-28"
+                className="bg-card/60 backdrop-blur-lg border border-border/20 rounded-[24px] p-8 shadow-lg space-y-8 sticky top-28 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
