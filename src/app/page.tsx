@@ -2,6 +2,7 @@ import Header from '@/components/layout/header';
 import HeroSection from '@/components/sections/hero';
 import AboutSection from '@/components/sections/about';
 import ValuesSection from '@/components/sections/values';
+import TurnkeyProjectsSection from '@/components/sections/turnkey-projects';
 import VideoTestimonialsSection from '@/components/sections/video-testimonials';
 import ServicesSection from '@/components/sections/services';
 import ConstructionProgressSection from '@/components/sections/construction-progress';
@@ -18,6 +19,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ValuesSection />
+        <TurnkeyProjectsSection />
         <VideoTestimonialsSection />
         <ServicesSection />
         <ConstructionProgressSection />

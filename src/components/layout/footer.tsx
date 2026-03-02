@@ -6,7 +6,7 @@ import { MapPin, Mail, Phone, ChevronRight } from 'lucide-react';
 export default function Footer() {
   const services = [
     { name: 'Full Home Construction', href: '#services' },
-    { name: 'Turnkey Projects', href: '#services' },
+    { name: 'Turnkey Projects', href: '#turnkey-projects' },
     { name: 'Interior & Exterior Design', href: '#services' },
     { name: 'Renovation & Remodeling', href: '#services' },
   ];
@@ -14,6 +14,7 @@ export default function Footer() {
   const quickLinks = [
     { name: 'About Us', href: '#about' },
     { name: 'Our Projects', href: '#projects' },
+    { name: 'Turnkey Solutions', href: '#turnkey-projects' },
     { name: 'Contact', href: '#contact' },
     { name: 'Privacy Policy', href: '#' },
   ];

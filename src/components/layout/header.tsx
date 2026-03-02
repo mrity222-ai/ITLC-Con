@@ -8,6 +8,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 const navItems = [
   { name: 'About', href: '#about' },
   { name: 'Services', href: '#services' },
+  { name: 'Turnkey', href: '#turnkey-projects' },
   { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' },
 ];
