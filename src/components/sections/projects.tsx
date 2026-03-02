@@ -18,7 +18,7 @@ const projects: {
   { id: 'project-1', category: 'Ongoing', title: 'Modern Villa', image: PlaceHolderImages.find(p => p.id === 'project-1') },
   { id: 'project-2', category: 'Completed', title: 'Luxury Apartment Interior', image: PlaceHolderImages.find(p => p.id === 'project-2') },
   { id: 'project-3', category: 'Completed', title: 'Residential Complex', image: PlaceHolderImages.find(p => p.id === 'project-3') },
-  { id: 'project-4', category: 'Completed', title: 'Commercial Hub', image: PlaceHolderImages.find(p => p.id === 'project-4') },
+  { id: 'project-4', category: 'Completed', title: 'European-style houses', image: PlaceHolderImages.find(p => p.id === 'project-4') },
   { id: 'project-5', category: 'Ongoing', title: 'Minimalist Penthouse', image: PlaceHolderImages.find(p => p.id === 'project-5') },
   { id: 'project-6', category: 'Completed', title: 'Corporate Office Building', image: PlaceHolderImages.find(p => p.id === 'project-6') },
 ].filter((p): p is { id: string; category: 'Ongoing' | 'Completed'; title: string; image: ImagePlaceholder } => !!p.image);
