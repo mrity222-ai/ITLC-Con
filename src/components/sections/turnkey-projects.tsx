@@ -1,107 +1,117 @@
 'use client';
 
-import { CheckCircle, Briefcase } from 'lucide-react';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { motion } from 'framer-motion';
+import { Briefcase, Coins, Timer, Award, Smile, type LucideIcon } from 'lucide-react';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
-const turnkeyServices = [
-  'Architectural Planning & Design',
-  'Structural Engineering',
-  'Material Procurement',
-  'Construction Execution',
-  'Quality Control & Safety Compliance',
-  'Project Management',
-  'Final Inspection & Handover',
+const turnkeyBenefits: { title: string; description: string, icon: LucideIcon }[] = [
+  { title: 'Single Point of Contact', description: 'One contract for the entire project lifecycle, ensuring seamless communication.', icon: Briefcase },
+  { title: 'Cost-Effective Execution', description: 'Optimized budgeting and resource management to prevent hidden costs.', icon: Coins },
+  { title: 'Faster Project Completion', description: 'Streamlined workflows and parallel activities to meet tight deadlines.', icon: Timer },
+  { title: 'Assured Quality Standards', description: 'Rigorous quality control and premium materials at every stage.', icon: Award },
+  { title: 'Hassle-Free Experience', description: 'We manage all complexities, from permits to handover, for your peace of mind.', icon: Smile },
 ];
 
-const turnkeyBenefits = [
-  { title: 'Single Contract Responsibility', description: 'One point of contact for the entire lifecycle of the project.' },
-  { title: 'Cost-Effective Execution', description: 'Optimized budgeting with no hidden costs.' },
-  { title: 'Faster Project Completion', description: 'Streamlined workflows to meet deadlines.' },
-  { title: 'Assured Quality Standards', description: 'Rigorous quality control at every stage.' },
-  { title: 'Hassle-Free Experience', description: 'We manage the complexities, so you don\'t have to.' },
-];
+const turnkeyImage = PlaceHolderImages.find(p => p.id === 'turnkey-illustration');
 
 export default function TurnkeyProjectsSection() {
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" }
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } }
+  };
+  
   return (
     <motion.section
       id="turnkey-projects"
-      className="py-24 sm:py-32 bg-background relative overflow-hidden"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      className="py-24 sm:py-32 bg-background"
+      variants={sectionVariants}
+      initial="hidden"
+      whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-secondary/20 via-transparent to-transparent"></div>
-       <div className="absolute -top-24 -right-24 w-72 h-72 bg-primary/10 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
-      <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-accent/10 rounded-full filter blur-3xl opacity-40 animate-pulse animation-delay-4000"></div>
-
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
-        <motion.div 
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-        >
-          <h2 className="text-4xl md:text-5xl font-bold font-headline mb-4 tracking-tight text-foreground">
-            Turnkey Projects
-          </h2>
-          <p className="max-w-3xl mx-auto text-muted-foreground md:text-lg">
-            End-to-End Construction Solutions Under One Roof
-          </p>
-        </motion.div>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            
+            {/* Left Column: Image */}
+            {turnkeyImage && (
+                <motion.div 
+                    className="relative aspect-square lg:aspect-[4/3.5] rounded-3xl overflow-hidden shadow-2xl shadow-primary/10"
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                >
+                    <Image
+                        src={turnkeyImage.imageUrl}
+                        alt={turnkeyImage.description}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={turnkeyImage.imageHint}
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                </motion.div>
+            )}
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Right Column: Content */}
             <motion.div 
-                className="space-y-8"
-                initial={{ opacity: 0, x: -30 }}
+                className="flex flex-col justify-center"
+                initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
             >
-                <div className="bg-card/60 backdrop-blur-lg border border-border/20 rounded-[24px] p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                    <p className="text-muted-foreground leading-relaxed mb-6">
-                        We provide complete turnkey project services that cover every stage of construction—from initial planning and design to material procurement, execution, and final handover. Our integrated approach ensures seamless coordination, strict quality control, and timely delivery without hidden costs or delays.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                        With a single point of responsibility, we simplify the entire construction process for our clients, ensuring transparency, efficiency, and superior results. Whether it’s residential, commercial, or infrastructure projects, our expert team manages everything so you can focus on your vision while we handle the execution.
-                    </p>
-                </div>
-                <div className="bg-card/60 backdrop-blur-lg border border-border/20 rounded-[24px] p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                    <h3 className="font-bold font-headline text-xl tracking-tight text-foreground mb-6">Our Turnkey Services Include:</h3>
-                    <ul className="space-y-3">
-                        {turnkeyServices.map((service) => (
-                            <li key={service} className="flex items-start">
-                                <CheckCircle className="w-5 h-5 mr-3 mt-0.5 text-primary shrink-0" />
-                                <span className="text-muted-foreground">{service}</span>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </motion.div>
-            <motion.div 
-                className="bg-card/60 backdrop-blur-lg border border-border/20 rounded-[24px] p-8 shadow-lg space-y-8 sticky top-28 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-            >
-                <h3 className="font-bold font-headline text-xl tracking-tight text-foreground">Why Choose Our Turnkey Solutions?</h3>
-                <div className="space-y-6">
+                <motion.h3 
+                    className="text-primary font-semibold mb-2"
+                    variants={itemVariants}
+                >
+                    End-to-End Construction Solutions
+                </motion.h3>
+                <motion.h2 
+                    className="text-4xl md:text-5xl font-bold font-headline mb-6 tracking-tight text-foreground"
+                    variants={itemVariants}
+                >
+                    Turnkey Projects
+                </motion.h2>
+
+                <motion.p className="text-muted-foreground leading-relaxed mb-8" variants={itemVariants}>
+                    Our turnkey project services cover every stage of construction—from initial planning and design to material procurement, execution, and final handover. With a single point of responsibility, we simplify the entire process, ensuring transparency, efficiency, and superior results for your dream project.
+                </motion.p>
+                
+                <motion.div 
+                    className="grid sm:grid-cols-2 gap-6"
+                    variants={{
+                        hidden: {},
+                        visible: { transition: { staggerChildren: 0.1, delayChildren: 0.2 } }
+                    }}
+                >
                     {turnkeyBenefits.map((benefit) => (
-                        <div key={benefit.title} className="flex items-start">
-                            <div className="mr-4 mt-1">
-                                <div className="bg-primary/10 text-primary rounded-full p-2">
-                                    <Briefcase className="w-5 h-5" />
-                                </div>
-                            </div>
-                            <div>
-                                <h4 className="font-semibold text-foreground">{benefit.title}</h4>
-                                <p className="text-sm text-muted-foreground">{benefit.description}</p>
-                            </div>
-                        </div>
+                        <motion.div key={benefit.title} variants={itemVariants}>
+                            <Card className="bg-secondary/50 border-border/50 h-full transition-all duration-300 hover:shadow-card-light hover:-translate-y-1">
+                                <CardHeader className="flex flex-row items-center gap-4 pb-2">
+                                    <div className="bg-primary/10 text-primary p-2.5 rounded-lg">
+                                        <benefit.icon className="w-5 h-5"/>
+                                    </div>
+                                    <CardTitle className="text-base font-semibold">{benefit.title}</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-sm text-muted-foreground">{benefit.description}</p>
+                                </CardContent>
+                            </Card>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </motion.div>
         </div>
       </div>
