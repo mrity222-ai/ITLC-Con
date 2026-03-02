@@ -32,7 +32,7 @@ export default function Header() {
               />
             </div>
           )}
-          <span className="text-primary leading-tight">
+          <span className="text-foreground leading-tight">
             Design & Construction
           </span>
         </Link>
