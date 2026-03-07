@@ -35,9 +35,9 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
-        <div className="text-center mb-12">
+        <div className="mb-12">
           <h2 className="text-4xl md:text-5xl font-bold font-headline mb-4 tracking-tight text-foreground">Our Portfolio</h2>
-          <p className="max-w-3xl mx-auto text-muted-foreground md:text-lg">
+          <p className="max-w-3xl text-muted-foreground md:text-lg">
             A glimpse into the quality, diversity, and craftsmanship of our completed and ongoing projects.
           </p>
         </div>
