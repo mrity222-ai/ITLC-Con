@@ -77,19 +77,15 @@ export default function ServicesSection() {
       animate={controls}
       className="py-24 sm:py-32 bg-secondary"
     >
-      <div className="container mx-auto px-4 md:px-6 text-center max-w-7xl">
-        <motion.h2 
-            className="text-4xl md:text-5xl font-bold font-headline mb-4 tracking-tight text-foreground"
-            variants={cardVariants}
-        >
-            Our Expertise
-        </motion.h2>
-        <motion.p 
-            className="max-w-3xl mx-auto text-muted-foreground md:text-lg mb-16"
-            variants={cardVariants}
-        >
-          We offer a comprehensive range of construction and design services, tailored to meet the unique needs of each client.
-        </motion.p>
+      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+        <motion.div variants={cardVariants} className="mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold font-headline mb-4 tracking-tight text-foreground">
+                Our Expertise
+            </h2>
+            <p className="max-w-3xl text-muted-foreground md:text-lg">
+              We offer a comprehensive range of construction and design services, tailored to meet the unique needs of each client.
+            </p>
+        </motion.div>
         <motion.div 
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
             variants={gridVariants}
