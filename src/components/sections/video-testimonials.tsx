@@ -10,11 +10,6 @@ const testimonials = [
     posterId: 'testimonial-1',
   },
   {
-    id: 2,
-    videoUrl: '/vio/2.mp4',
-    posterId: 'testimonial-2',
-  },
-  {
     id: 3,
     videoUrl: '/vio/3.mp4',
     posterId: 'testimonial-3',
@@ -33,7 +28,7 @@ export default function VideoTestimonialsSection() {
             Watch what our satisfied customers have to say about their experience with ITLC INDIA.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:max-w-4xl lg:mx-auto">
           {testimonials.map((testimonial) => {
             const posterImage = PlaceHolderImages.find(p => p.id === testimonial.posterId);
             return (

@@ -101,91 +101,91 @@ export const placeholderImages: ImagePlaceholder[] = [
     {
       "id": "gallery-1",
       "description": "Modern building exterior",
-      "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "/wor/1.png",
       "imageHint": "modern architecture"
     },
     {
       "id": "gallery-2",
       "description": "Minimalist interior with staircase",
-      "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "/wor/2.png",
       "imageHint": "minimalist interior"
     },
     {
       "id": "gallery-3",
       "description": "Luxury home with a pool",
-      "imageUrl": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "/wor/3.png",
       "imageHint": "luxury home"
     },
     {
       "id": "gallery-4",
       "description": "Skyscraper with glass facade",
-      "imageUrl": "https://images.unsplash.com/photo-1542361345-89e58247f2d5?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "/wor/4.png",
       "imageHint": "skyscraper building"
     },
     {
       "id": "gallery-5",
       "description": "Cozy living room with fireplace",
-      "imageUrl": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "/wor/5.png",
       "imageHint": "living room"
     },
     {
       "id": "gallery-6",
       "description": "Modern kitchen design",
-      "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "/wor/6.png",
       "imageHint": "modern kitchen"
     },
     {
       "id": "gallery-7",
       "description": "Abstract architectural building",
-      "imageUrl": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "/wor/7.png",
       "imageHint": "abstract architecture"
     },
     {
       "id": "gallery-8",
       "description": "Bright and airy bedroom",
-      "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16433d?q=80&w=1972&auto=format&fit=crop",
+      "imageUrl": "/wor/8.png",
       "imageHint": "bedroom interior"
     },
     {
       "id": "gallery-9",
       "description": "Wooden cabin in a forest",
-      "imageUrl": "https://images.unsplash.com/photo-1551063234-aa1e658395e2?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "/wor/9.png",
       "imageHint": "cabin architecture"
     },
     {
       "id": "gallery-10",
       "description": "Cityscape view from a balcony",
-      "imageUrl": "https://images.unsplash.com/photo-1534430480872-741464a47517?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "/wor/10.png",
       "imageHint": "cityscape view"
     },
     {
       "id": "gallery-11",
       "description": "Modern office interior",
-      "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "/wor/11.png",
       "imageHint": "office interior"
     },
     {
       "id": "gallery-12",
       "description": "Brutalist concrete building",
-      "imageUrl": "https://images.unsplash.com/photo-1588683344535-c3809d4a3c27?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "/wor/12.png",
       "imageHint": "brutalist architecture"
     },
     {
       "id": "gallery-13",
       "description": "Elegant bathroom design",
-      "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "/wor/13.png",
       "imageHint": "bathroom design"
     },
     {
       "id": "gallery-14",
       "description": "House exterior with a garden",
-      "imageUrl": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "/wor/14.png",
       "imageHint": "house garden"
     },
     {
       "id": "gallery-15",
       "description": "Curved modern building",
-      "imageUrl": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=2071&auto=format&fit=crop",
+      "imageUrl": "/wor/5.png",
       "imageHint": "modern building"
     }
   ];
