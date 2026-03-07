@@ -74,7 +74,7 @@ export default function ConstructionProgressSection() {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3, ease: 'easeInOut' }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight" style={{textShadow: '0 2px 10px rgba(0,0,0,0.5)'}}>{currentStepData.title}</h2>
+              <h2 className="text-4xl md:text-5xl font-bold font-headline mb-4 tracking-tight" style={{textShadow: '0 2px 10px rgba(0,0,0,0.5)'}}>{currentStepData.title}</h2>
               <p className="text-lg md:text-xl text-white/90" style={{textShadow: '0 1px 5px rgba(0,0,0,0.5)'}}>{currentStepData.description}</p>
             </motion.div>
           </AnimatePresence>

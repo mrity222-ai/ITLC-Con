@@ -43,7 +43,6 @@ export default function TurnkeyProjectsSection() {
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             
-            {/* Left Column: Image */}
             {turnkeyImage && (
                 <motion.div 
                     className="relative aspect-square lg:aspect-[4/3.5] rounded-3xl overflow-hidden shadow-2xl shadow-primary/10"
@@ -72,20 +71,14 @@ export default function TurnkeyProjectsSection() {
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
             >
-                <motion.h3 
-                    className="text-primary font-semibold mb-2"
-                    variants={itemVariants}
-                >
-                    End-to-End Construction Solutions
-                </motion.h3>
                 <motion.h2 
-                    className="text-4xl md:text-5xl font-bold font-headline mb-6 tracking-tight text-foreground"
+                    className="text-4xl md:text-5xl font-bold font-headline mb-4 tracking-tight text-foreground"
                     variants={itemVariants}
                 >
                     Turnkey Projects
                 </motion.h2>
 
-                <motion.p className="text-muted-foreground leading-relaxed mb-8" variants={itemVariants}>
+                <motion.p className="text-muted-foreground md:text-lg leading-relaxed mb-8" variants={itemVariants}>
                     Our turnkey project services cover every stage of construction—from initial planning and design to material procurement, execution, and final handover. With a single point of responsibility, we simplify the entire process, ensuring transparency, efficiency, and superior results for your dream project.
                 </motion.p>
                 

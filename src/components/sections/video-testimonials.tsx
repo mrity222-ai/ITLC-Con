@@ -26,10 +26,10 @@ export default function VideoTestimonialsSection() {
     <section id="testimonials" className="py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4 tracking-tight text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold font-headline mb-4 tracking-tight text-foreground">
             Hear From Our Clients
           </h2>
-          <p className="max-w-3xl mx-auto text-muted-foreground">
+          <p className="max-w-3xl mx-auto text-muted-foreground md:text-lg">
             Watch what our satisfied customers have to say about their experience with ITLC INDIA.
           </p>
         </div>

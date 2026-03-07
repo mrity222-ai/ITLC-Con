@@ -127,15 +127,14 @@ export default function AboutSection() {
             }}
           >
             <motion.h2 
-              className="text-4xl md:text-5xl font-bold font-headline mb-6 tracking-tight text-foreground"
+              className="text-4xl md:text-5xl font-bold font-headline mb-4 tracking-tight text-foreground"
               variants={itemVariants}
             >
               Building Trust. Crafting Excellence.
             </motion.h2>
-            <motion.div variants={itemVariants} className="w-20 h-1.5 bg-primary mb-8 rounded-full"></motion.div>
             
             <motion.div 
-              className="space-y-6 text-muted-foreground"
+              className="space-y-6 text-muted-foreground md:text-lg"
               variants={itemVariants}
             >
               <p>
