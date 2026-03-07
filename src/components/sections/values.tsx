@@ -51,11 +51,11 @@ export default function ValuesSection() {
       <div className="absolute -bottom-24 -right-24 w-72 h-72 bg-sky-200/50 rounded-full filter blur-3xl opacity-40 animate-pulse animation-delay-4000 dark:bg-sky-900/30"></div>
 
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
-        <motion.div className="text-center mb-16" variants={cardVariants}>
+        <motion.div className="mb-16" variants={cardVariants}>
           <h2 className="text-4xl md:text-5xl font-bold font-headline mb-4 tracking-tight text-foreground">
             Our Core Values
           </h2>
-          <p className="max-w-3xl mx-auto text-muted-foreground md:text-lg">
+          <p className="max-w-3xl text-muted-foreground md:text-lg">
             The principles that guide every foundation we lay and every home we build.
           </p>
         </motion.div>
