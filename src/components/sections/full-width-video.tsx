@@ -6,7 +6,7 @@ export default function FullWidthVideoSection() {
   const posterImage = PlaceHolderImages.find(p => p.id === 'testimonial-2');
 
   return (
-    <section className="h-[70vh] w-full relative bg-black overflow-hidden">
+    <section className="h-screen w-full relative bg-black overflow-hidden">
       <video
         autoPlay
         loop
