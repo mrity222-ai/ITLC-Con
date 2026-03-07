@@ -13,7 +13,7 @@ const getImagesByIds = (ids: string[]): ImagePlaceholder[] => {
 
 const columnsData = [
   { ids: ['gallery-1', 'gallery-2', 'gallery-3', 'gallery-4', 'gallery-5'], duration: 40 },
-  { ids: ['gallery-6', 'gallery-7', 'gallery-8', 'gallery-9'], duration: 55 },
+  { ids: ['gallery-6', 'gallery-7', 'gallery-8', 'gallery-9', 'gallery-15'], duration: 55 },
   { ids: ['gallery-10', 'gallery-11', 'gallery-12', 'gallery-13', 'gallery-14'], duration: 45 },
 ];
 
