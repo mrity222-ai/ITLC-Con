@@ -34,9 +34,9 @@ export default function WhyChooseUsSection() {
   return (
     <section id="why-us" className="py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
-        <div className="text-center mb-12">
+        <div className="mb-12">
           <h2 className="text-4xl md:text-5xl font-bold font-headline mb-4 tracking-tight text-foreground">Why Choose ITLC India?</h2>
-          <p className="max-w-3xl mx-auto text-muted-foreground md:text-lg">
+          <p className="max-w-3xl text-muted-foreground md:text-lg">
             We are more than just builders. We are partners in creating the space you'll call home.
           </p>
         </div>
