@@ -11,7 +11,6 @@ import WhyChooseUsSection from '@/components/sections/why-choose-us';
 import LeadFormSection from '@/components/sections/lead-form';
 import Footer from '@/components/layout/footer';
 import ScrollingGallerySection from '@/components/sections/scrolling-gallery';
-import FullWidthVideoSection from '@/components/sections/full-width-video';
 
 export default function Home() {
   return (
@@ -22,7 +21,6 @@ export default function Home() {
         <ScrollingGallerySection />
         <AboutSection />
         <VideoTestimonialsSection />
-        <FullWidthVideoSection />
         <ValuesSection />
         <TurnkeyProjectsSection />
         <ServicesSection />
