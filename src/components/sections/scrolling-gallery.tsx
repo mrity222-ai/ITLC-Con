@@ -62,16 +62,10 @@ export default function ScrollingGallerySection() {
                         <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tight text-foreground">
                             Our Project Gallery
                         </h2>
-                        <p className="mt-4 text-muted-foreground max-w-xl">
+                        <p className="mt-4 text-muted-foreground max-w-xl md:text-lg">
                             Explore a curated collection of our finest work, showcasing our dedication to quality and design excellence.
                         </p>
                     </div>
-                    <Button asChild size="lg" className={cn(
-                        "rounded-[12px] font-semibold px-7 py-3.5 shadow-button-light transition-all duration-300 hover:-translate-y-0.5 hover:shadow-button-light-hover",
-                        "bg-primary text-primary-foreground"
-                    )}>
-                        <Link href="#projects">Know more</Link>
-                    </Button>
                 </div>
             </div>
 
