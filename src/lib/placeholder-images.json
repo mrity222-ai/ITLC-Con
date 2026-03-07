@@ -38,37 +38,37 @@
     },
     {
       "id": "project-1",
-      "description": "A modern villa project.",
+      "description": "Modern Villa",
       "imageUrl": "/pro/1.jpg",
       "imageHint": "modern house"
     },
     {
       "id": "project-2",
-      "description": "An interior design project.",
+      "description": "complete luxury home",
       "imageUrl": "/pro/2.jpg",
       "imageHint": "luxury interior"
     },
     {
       "id": "project-3",
-      "description": "A completed apartment exterior.",
+      "description": "Luxury house",
       "imageUrl": "/pro/3.jpg",
       "imageHint": "apartment building"
     },
     {
       "id": "project-4",
-      "description": "An ongoing construction project.",
+      "description": "European-style houses",
       "imageUrl": "/pro/10.jpg",
       "imageHint": "construction site"
     },
     {
       "id": "project-5",
-      "description": "A residential interior project.",
+      "description": "Corporate Office Building",
       "imageUrl": "/pro/4.jpg",
       "imageHint": "living room"
     },
     {
       "id": "project-6",
-      "description": "A commercial building project.",
+      "description": "Modern house",
       "imageUrl": "/pro/9.jpg",
       "imageHint": "office building"
     },
@@ -95,6 +95,90 @@
       "description": "Video testimonial 3 poster",
       "imageUrl": "https://images.unsplash.com/photo-1601758003122-53c40e686a19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYW1pbHklMjBob21lfGVufDB8fHx8MTc3MjIyNDE5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "family home"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Modern building exterior",
+      "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "modern architecture"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Minimalist interior with staircase",
+      "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "minimalist interior"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Luxury home with a pool",
+      "imageUrl": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "luxury home"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Skyscraper with glass facade",
+      "imageUrl": "https://images.unsplash.com/photo-1542361345-89e58247f2d5?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "skyscraper building"
+    },
+    {
+      "id": "gallery-5",
+      "description": "Cozy living room with fireplace",
+      "imageUrl": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "living room"
+    },
+    {
+      "id": "gallery-6",
+      "description": "Modern kitchen design",
+      "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "modern kitchen"
+    },
+    {
+      "id": "gallery-7",
+      "description": "Abstract architectural building",
+      "imageUrl": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "abstract architecture"
+    },
+    {
+      "id": "gallery-8",
+      "description": "Bright and airy bedroom",
+      "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16433d?q=80&w=1972&auto=format&fit=crop",
+      "imageHint": "bedroom interior"
+    },
+    {
+      "id": "gallery-9",
+      "description": "Wooden cabin in a forest",
+      "imageUrl": "https://images.unsplash.com/photo-1551063234-aa1e658395e2?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "cabin architecture"
+    },
+    {
+      "id": "gallery-10",
+      "description": "Cityscape view from a balcony",
+      "imageUrl": "https://images.unsplash.com/photo-1534430480872-741464a47517?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "cityscape view"
+    },
+    {
+      "id": "gallery-11",
+      "description": "Modern office interior",
+      "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "office interior"
+    },
+    {
+      "id": "gallery-12",
+      "description": "Brutalist concrete building",
+      "imageUrl": "https://images.unsplash.com/photo-1588683344535-c3809d4a3c27?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "brutalist architecture"
+    },
+    {
+      "id": "gallery-13",
+      "description": "Elegant bathroom design",
+      "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "bathroom design"
+    },
+    {
+      "id": "gallery-14",
+      "description": "House exterior with a garden",
+      "imageUrl": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "house garden"
     }
   ]
 }

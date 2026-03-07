@@ -10,6 +10,7 @@ import ProjectsSection from '@/components/sections/projects';
 import WhyChooseUsSection from '@/components/sections/why-choose-us';
 import LeadFormSection from '@/components/sections/lead-form';
 import Footer from '@/components/layout/footer';
+import ScrollingGallerySection from '@/components/sections/scrolling-gallery';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <TurnkeyProjectsSection />
         <VideoTestimonialsSection />
         <ServicesSection />
+        <ScrollingGallerySection />
         <ConstructionProgressSection />
         <ProjectsSection />
         <WhyChooseUsSection />
