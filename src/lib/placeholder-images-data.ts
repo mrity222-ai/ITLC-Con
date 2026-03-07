@@ -89,7 +89,7 @@ export const placeholderImages: ImagePlaceholder[] = [
     {
       "id": "turnkey-illustration",
       "description": "Illustration of a construction site with tools and blueprints.",
-      "imageUrl": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb25zdHJ1Y3Rpb24lMjBibHVlcHJpbnRzfGVufDB8fHx8MTc3MzA1MTg5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/pro/11.jpg",
       "imageHint": "construction blueprints"
     },
     {
