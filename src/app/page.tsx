@@ -20,9 +20,9 @@ export default function Home() {
         <HeroSection />
         <ScrollingGallerySection />
         <AboutSection />
+        <VideoTestimonialsSection />
         <ValuesSection />
         <TurnkeyProjectsSection />
-        <VideoTestimonialsSection />
         <ServicesSection />
         <ConstructionProgressSection />
         <ProjectsSection />
