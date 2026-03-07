@@ -179,7 +179,7 @@ export const placeholderImages: ImagePlaceholder[] = [
     {
       "id": "gallery-14",
       "description": "House exterior with a garden",
-      "imageUrl": "/wor/14.png",
+      "imageUrl": "/wor/1.png",
       "imageHint": "house garden"
     },
     {
