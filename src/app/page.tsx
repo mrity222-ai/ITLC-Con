@@ -18,12 +18,12 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <ScrollingGallerySection />
         <AboutSection />
         <ValuesSection />
         <TurnkeyProjectsSection />
         <VideoTestimonialsSection />
         <ServicesSection />
-        <ScrollingGallerySection />
         <ConstructionProgressSection />
         <ProjectsSection />
         <WhyChooseUsSection />
