@@ -23,8 +23,8 @@ if ($is_local) {
 } else {
     // Production Database Credentials (Hostinger)
     $host = 'localhost';
-    $db   = 'u997632379_Infravision';
-    $user = 'u997632379_Infra';
+    $db   = 'u997632379_infravision';
+    $user = 'u997632379_infra';
     $pass = 'Itlc@121';
 }
 $charset = 'utf8mb4';
