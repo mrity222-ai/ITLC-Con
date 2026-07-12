@@ -1005,17 +1005,17 @@ app.post('/api/upload.php', checkAuth, upload.any(), async (req, res) => {
   const subDir = isVid ? 'videos' : `images/${section}`;
 
   const relativePath = `assets/${subDir}/${file.filename}`;
-  const distDest = path.join(__dirname, 'dist', relativePath);
+  const distDest = path.join(__dirname, 'build', relativePath);
 
-  // Copy to build folder (dist/) as well to serve instantly in production
+  // Copy to build folder (build/) as well to serve instantly in production
   try {
-    const distSubdirPath = path.join(__dirname, 'dist', 'assets', subDir);
+    const distSubdirPath = path.join(__dirname, 'build', 'assets', subDir);
     if (!fs.existsSync(distSubdirPath)) {
       fs.mkdirSync(distSubdirPath, { recursive: true });
     }
     fs.copyFileSync(file.path, distDest);
   } catch (err) {
-    console.error("Failed to copy uploaded asset to dist:", err.message);
+    console.error("Failed to copy uploaded asset to build:", err.message);
   }
 
   res.json({
@@ -1029,12 +1029,12 @@ app.post('/api/upload.php', checkAuth, upload.any(), async (req, res) => {
 // 16. Static Files & Single Page App Fallback
 // ==========================================
 
-// Serve static React production build files from dist/
-app.use(express.static(path.join(__dirname, 'dist')));
+// Serve static React production build files from build/
+app.use(express.static(path.join(__dirname, 'build')));
 
-// Fallback SPA routing (redirect all non-matched browser queries like /admin to dist/index.html)
+// Fallback SPA routing (redirect all non-matched browser queries like /admin to build/index.html)
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 // Start Gateway Server
