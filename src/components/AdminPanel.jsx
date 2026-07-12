@@ -560,9 +560,22 @@ const AdminPanel = ({ setCurrentPage }) => {
   useEffect(() => {
     const originalFetch = window.fetch;
     window.fetch = async (...args) => {
-      const response = await originalFetch(...args);
+      let [resource, config] = args;
+      
+      // Add custom X-Authorization header to bypass Apache stripping of standard Authorization header
+      if (config && config.headers) {
+        const authVal = config.headers['Authorization'] || config.headers['authorization'];
+        if (authVal) {
+          config.headers = {
+            ...config.headers,
+            'X-Authorization': authVal
+          };
+        }
+      }
+      
+      const response = await originalFetch(resource, config);
       if (response.status === 401) {
-        const url = typeof args[0] === 'string' ? args[0] : (args[0] ? args[0].url : '');
+        const url = typeof resource === 'string' ? resource : (resource ? resource.url : '');
         if (!url.includes('login.php')) {
           localStorage.removeItem('vite_admin_authenticated');
           localStorage.removeItem('vite_admin_token');

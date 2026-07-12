@@ -1,6 +1,6 @@
 -- Apex Builders & Architects - Complete Database Schema Dump
-CREATE DATABASE IF NOT EXISTS u997632379_Infravision;
-USE u997632379_Infravision;
+CREATE DATABASE IF NOT EXISTS u997632379_infravision;
+USE u997632379_infravision;
 
 -- --------------------------------------------------------
 -- Table structure for table `admin_users`

@@ -36,11 +36,13 @@ function checkAuthOrExit() {
         $authHeader = $_SERVER['HTTP_AUTHORIZATION'];
     } elseif (isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) {
         $authHeader = $_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
+    } elseif (isset($_SERVER['HTTP_X_AUTHORIZATION'])) {
+        $authHeader = $_SERVER['HTTP_X_AUTHORIZATION'];
     } else {
         // Fallback to case-insensitive headers lookup
         $headers = getallheaders();
         foreach ($headers as $key => $value) {
-            if (strtolower($key) === 'authorization') {
+            if (in_array(strtolower($key), ['authorization', 'x-authorization'])) {
                 $authHeader = $value;
                 break;
             }
@@ -60,7 +62,7 @@ function checkAuthOrExit() {
     
     return true;
 }
-
+ 
 function getCurrentUserOrExit() {
     $authHeader = '';
     
@@ -68,10 +70,12 @@ function getCurrentUserOrExit() {
         $authHeader = $_SERVER['HTTP_AUTHORIZATION'];
     } elseif (isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) {
         $authHeader = $_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
+    } elseif (isset($_SERVER['HTTP_X_AUTHORIZATION'])) {
+        $authHeader = $_SERVER['HTTP_X_AUTHORIZATION'];
     } else {
         $headers = getallheaders();
         foreach ($headers as $key => $value) {
-            if (strtolower($key) === 'authorization') {
+            if (in_array(strtolower($key), ['authorization', 'x-authorization'])) {
                 $authHeader = $value;
                 break;
             }
