@@ -3,6 +3,10 @@
   RewriteEngine On
   RewriteBase /
   
+  # Pass the Authorization header to PHP (needed for JWT in cPanel/Hostinger)
+  RewriteCond %{HTTP:Authorization} .
+  RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+  
   # Exclude /api directory from rewrites so backend requests work
   RewriteCond %{REQUEST_URI} ^/api/ [NC]
   RewriteRule ^ - [L]
