@@ -1,0 +1,5 @@
+<svg viewBox="0 0 160 45" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="5,28 15,10 28,10 18,28" fill="#FFC72C" />
+  <polygon points="12,28 22,10 26,10 16,28" fill="#000000" />
+  <text x="32" y="28" fontFamily="'Impact', sans-serif" fontWeight="bold" fontSize="18" fill="#FFC72C">UltraTech</text>
+</svg>

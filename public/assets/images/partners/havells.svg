@@ -1,0 +1,5 @@
+<svg viewBox="0 0 160 45" xmlns="http://www.w3.org/2000/svg">
+  <rect x="5" y="10" width="25" height="25" rx="4" fill="#E31E24" />
+  <path d="M12,17 L12,28 M23,17 L23,28 M12,22.5 L23,22.5" stroke="#FFF" stroke-width="3" stroke-linecap="round" />
+  <text x="38" y="29" fontFamily="'Futura', 'Arial Black', sans-serif" fontWeight="900" fontSize="18" fill="#222" letterSpacing="0.5">HAVELLS</text>
+</svg>

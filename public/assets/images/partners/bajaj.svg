@@ -1,0 +1,5 @@
+<svg viewBox="0 0 150 45" xmlns="http://www.w3.org/2000/svg">
+  <path d="M5,15 C5,10 15,10 20,15 C25,20 20,30 5,30 Z" fill="#0057A0" />
+  <path d="M12,15 L12,30 M12,15 C16,15 18,18 18,21 C18,24 12,24 12,24 M12,24 C17,24 19,27 19,30 C19,33 12,33 12,33" stroke="#FFF" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <text x="32" y="29" fontFamily="sans-serif" fontWeight="bold" fontSize="18" fill="#0057A0" letterSpacing="1">BAJAJ</text>
+</svg>

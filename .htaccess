@@ -1,0 +1,38 @@
+# Enable Rewrite Engine
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # 1. Exclude /api directory from rewrites so PHP scripts handle themselves
+  RewriteCond %{REQUEST_URI} ^/api/ [NC]
+  RewriteRule ^ - [L]
+
+  # 2. If the request is a physical file or folder in the root, serve it directly
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # 3. Rewrite assets and static files requests to the dist folder (removes DOCUMENT_ROOT dependency)
+  RewriteRule ^(assets/.*)$ dist/$1 [L,NC]
+  RewriteRule ^(favicon\.svg|globe\.svg|file\.svg|window\.svg|next\.svg|vercel\.svg|icons\.svg)$ dist/$1 [L,NC]
+
+  # 4. Rewrite all other queries (like /admin, /services) to dist/index.html for React SPA routing
+  RewriteRule ^(.*)$ dist/index.html [L]
+</IfModule>
+
+# Adjust PHP upload configurations if supported by host php.ini / .htaccess rules
+<IfModule mod_php7.c>
+  php_value upload_max_filesize 64M
+  php_value post_max_size 64M
+  php_value memory_limit 128M
+</IfModule>
+<IfModule mod_php.c>
+  php_value upload_max_filesize 64M
+  php_value post_max_size 64M
+  php_value memory_limit 128M
+</IfModule>
+
+# Enable Gzip Compression for faster page loads
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>

@@ -1,0 +1,5 @@
+<svg viewBox="0 0 150 45" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10,12 C18,12 22,18 20,28 C14,28 10,22 10,12 Z" fill="#006A4E" />
+  <path d="M12,14 C16,16 18,20 18,26" stroke="#FFF" stroke-width="1.5" fill="none" />
+  <text x="28" y="29" fontFamily="'Montserrat', sans-serif" fontWeight="700" fontSize="18" fill="#111" letterSpacing="1">jaquar</text>
+</svg>

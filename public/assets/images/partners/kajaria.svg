@@ -1,0 +1,6 @@
+<svg viewBox="0 0 150 45" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="20,10 30,20 20,30 10,20" fill="#C8102E" />
+  <line x1="10" y1="20" x2="30" y2="20" stroke="#FFF" stroke-width="1.5" />
+  <line x1="20" y1="10" x2="20" y2="30" stroke="#FFF" stroke-width="1.5" />
+  <text x="38" y="28" fontFamily="'Georgia', serif" fontWeight="900" fontSize="18" fontStyle="italic" fill="#C8102E">Kajaria</text>
+</svg>

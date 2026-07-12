@@ -1,0 +1,5 @@
+<svg viewBox="0 0 150 45" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="20" cy="22" r="15" fill="#005A9C" />
+  <path d="M14,28 C16,22 20,16 20,16 C20,16 24,22 26,28" stroke="#FFF" stroke-width="3" stroke-linecap="round" fill="none" />
+  <text x="42" y="29" fontFamily="'Arial Black', sans-serif" fontWeight="900" fontSize="18" fill="#005A9C" letterSpacing="1">TATA</text>
+</svg>
