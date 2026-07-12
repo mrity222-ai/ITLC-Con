@@ -7,9 +7,22 @@ import path from 'path';
 import fs from 'fs';
 import cors from 'cors';
 import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// Run production build on startup if the build folder doesn't exist
+const buildPath = path.join(__dirname, 'build');
+if (!fs.existsSync(buildPath) || !fs.existsSync(path.join(buildPath, 'index.html'))) {
+  console.log("Build directory not found or incomplete. Running npm run build...");
+  try {
+    execSync('npm run build', { stdio: 'inherit', cwd: __dirname });
+    console.log("Build completed successfully!");
+  } catch (err) {
+    console.error("Failed to run build:", err.message);
+  }
+}
 
 const app = express();
 const port = process.env.PORT || 8080;
