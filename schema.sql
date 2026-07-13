@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `admins` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dump data for table `admins`
-INSERT IGNORE INTO `admins` (`id`, `name`, `email`, `password_hash`, `role`, `created_at`) VALUES ('1', 'Administrator', 'admin', '$2y$10$LynOq7Np57uLlEumy94DlezTWio9ry2N9RYkRc.e7zM6J0JYuTAV.', 'Super Admin', '2026-07-07 13:18:02');
+INSERT IGNORE INTO `admins` (`id`, `name`, `email`, `password_hash`, `role`, `created_at`) VALUES ('1', 'Administrator', 'admin', '$2b$10$KRONJ9lYxyXeceyAGUBjsu11wTrvTvI2k1J6SSp2kV3ALcZUxbGGC', 'Super Admin', '2026-07-07 13:18:02');
 
 -- --------------------------------------------------------
 -- Table structure for table `audit_logs`
