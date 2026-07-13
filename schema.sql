@@ -1,4 +1,4 @@
--- Apex Builders & Architects - Complete Database Schema Dump
+-- InfraVision by ITLC India - Complete Database Schema Dump
 CREATE DATABASE IF NOT EXISTS u997632379_infravision;
 USE u997632379_infravision;
 
@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `cms_about` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dump data for table `cms_about`
-INSERT IGNORE INTO `cms_about` (`id`, `title`, `text1`, `text2`, `experience`, `projects`, `awards`) VALUES ('1', 'Pioneering Premium Construction & Architecture', 'For over 15 years, Apex Builders & Architects has stood at the intersection of aesthetic design and structural integrity. We treat every project not just as a building, but as a monument to precision engineering.', 'Our collaborative team of architects, project managers, and expert builders ensure that each detail aligns with our client\'s vision. From ground breaking to key handover, our commitment to green practices, safety, and modern design stands unmatched.', '15', '120', '45');
+INSERT IGNORE INTO `cms_about` (`id`, `title`, `text1`, `text2`, `experience`, `projects`, `awards`) VALUES ('1', 'Pioneering Premium Construction & Architecture', 'For over 10 years, InfraVision by ITLC India Private Limited has stood at the intersection of aesthetic design and structural integrity. We treat every project not just as a building, but as a monument to precision engineering.', 'Our collaborative team of architects, project managers, and expert builders ensure that each detail aligns with our client\'s vision. From ground breaking to key handover, our commitment to green practices, safety, and modern design stands unmatched.', '10', '120', '45');
 
 -- --------------------------------------------------------
 -- Table structure for table `cms_features`
