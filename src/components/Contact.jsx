@@ -105,17 +105,7 @@ const Contact = ({ setCurrentPage }) => {
       .catch(err => {
         console.error("Error submitting contact form:", err);
         setIsLoading(false);
-        // Fallback
-        setIsSubmitted(true);
-        setFormData({
-          name: '',
-          email: '',
-          service: 'residential',
-          message: ''
-        });
-        setTimeout(() => {
-          setIsSubmitted(false);
-        }, 8000);
+        alert("Connection issue: Failed to submit proposal. Please check if the server is active or try again later!");
       });
     }
   };

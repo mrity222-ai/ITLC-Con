@@ -50,9 +50,9 @@ if (is_local) {
   // Production Database Credentials (Hostinger)
   dbConfig = {
     host: 'localhost',
-    user: 'u997632379_infra',
+    user: 'u997632379_Infra',
     password: 'Itlc@121',
-    database: 'u997632379_infravision',
+    database: 'u997632379_Infravision',
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0

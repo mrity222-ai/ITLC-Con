@@ -617,7 +617,14 @@ const AdminPanel = ({ setCurrentPage }) => {
     })
       .then(res => res.json())
       .then(data => {
-        if (Array.isArray(data)) setInquiries(data);
+        if (Array.isArray(data)) {
+          const normalized = data.map(inq => {
+            let status = inq.status || 'New';
+            status = status.charAt(0).toUpperCase() + status.slice(1).toLowerCase();
+            return { ...inq, status };
+          });
+          setInquiries(normalized);
+        }
       })
       .catch(err => console.error("Error loading inquiries:", err));
 
@@ -1809,7 +1816,7 @@ const AdminPanel = ({ setCurrentPage }) => {
                           inq.email.toLowerCase().includes(inquirySearch.toLowerCase()) ||
                           inq.message.toLowerCase().includes(inquirySearch.toLowerCase());
     if (inquiryFilter === 'All') return matchesSearch;
-    return matchesSearch && inq.status === inquiryFilter;
+    return matchesSearch && (inq.status || 'New').toLowerCase() === inquiryFilter.toLowerCase();
   });
 
   const filteredProjectsList = projects.filter(p => 
